@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/config"
+        android:title="Login"
+        android:icon="@drawable/account"
+        android:orderInCategory="95"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:title="Ver Ruta"
+        android:id="@+id/menu_mapa"
+        android:orderInCategory="90"
+        android:icon="@drawable/ic_cultural"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:title="Usar Cámara"
+        android:id="@+id/menu_camara"
+        android:orderInCategory="85"
+        android:icon="@drawable/slr_camera_application_slr_3037"
+        app:showAsAction="always|collapseActionView"/>
+
+</menu>

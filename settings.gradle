@@ -1,0 +1,2 @@
+rootProject.name='VisitAndo'
+include ':app'
