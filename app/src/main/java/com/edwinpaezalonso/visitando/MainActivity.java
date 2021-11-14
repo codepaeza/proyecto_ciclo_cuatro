@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.edwinpaezalonso.visitando.vista.ListaUnoActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -58,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void lanzarVisitarActivity(View view) {
 
-        //Intent i = new Intent(MainActivity.this, ListaUnoActivity.class);
-        //startActivity(i);
+        Intent i = new Intent(MainActivity.this, ListaUnoActivity.class);
+        startActivity(i);
 
         Toast toasti =
-                Toast.makeText(MainActivity.this, "Login", Toast.LENGTH_LONG);
+                Toast.makeText(MainActivity.this, "Aqui va el Login", Toast.LENGTH_LONG);
         toasti.show();
     }
 
