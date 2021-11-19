@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.config) {
-            lanzarVisitarActivity(null);
+            lanzarRegistroActivity(null);
             return true;
 
         }
@@ -58,20 +58,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void lanzarVisitarActivity(View view) {
+    public void lanzarRegistroActivity(View view) {
 
-        Intent i = new Intent(MainActivity.this, ListaUnoActivity.class);
+        Intent i = new Intent(MainActivity.this, RegistroActivity.class);
         startActivity(i);
 
         Toast toasti =
-                Toast.makeText(MainActivity.this, "Aqui va el Login", Toast.LENGTH_LONG);
+                Toast.makeText(MainActivity.this, "Registrarse en VistAndo", Toast.LENGTH_LONG);
         toasti.show();
     }
 
     public void lanzarMapaActivity(View view) {
 
-        //Intent j = new Intent(MainActivity.this, SolicitarActivity.class);
-        //startActivity(j);
+        Intent j = new Intent(MainActivity.this, MapsActivity.class);
+        startActivity(j);
 
         Toast toastj =
                 Toast.makeText(MainActivity.this, "Ver la Ruta en el Mapa", Toast.LENGTH_LONG);
